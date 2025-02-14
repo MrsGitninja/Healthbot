@@ -62,7 +62,7 @@ def predict_answer(user_input):
     lang = detect(user_input)
     st.write(f"{lang}")
     
-   if lang != 'fr':  
+    if lang != 'en':  
             with st.spinner('Translating...'):
                 try:
                     # Add a delay before calling the translation API (e.g., 2 seconds)
