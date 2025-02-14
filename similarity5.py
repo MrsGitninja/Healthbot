@@ -7,7 +7,7 @@ from langdetect import detect
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from translate import Translator
-from Monchat2 import model, vectorizer
+from Healthbot.Monchat2 import model, vectorizer
 from deep_translator import GoogleTranslator
 
 
