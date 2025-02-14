@@ -64,8 +64,8 @@ def predict_answer(user_input):
     
    # translatuser = GoogleTranslator (to_lang = lang )
      fallback_translator = Translator(to_lang=lang)
-                    fallback_language = fallback_translator.translate("You are speaking in: ")
-                    st.write(f"{fallback_language} {lang}")
+     fallback_language = fallback_translator.translate("You are speaking in: ")
+     st.write(f"{fallback_language} {lang}")
              
 
   
