@@ -62,10 +62,17 @@ def predict_answer(user_input):
     lang = detect(user_input)
     st.write(f"{lang}")
     
-   # translatuser = GoogleTranslator (to_lang = lang )
-    fallback_translator = Translator(to_lang=lang)
-    fallback_language = fallback_translator.translate("You are speaking in: ")
-    st.write(f"{fallback_language} {lang}")
+   if lang != 'fr':  
+            with st.spinner('Translating...'):
+                try:
+                    # Add a delay before calling the translation API (e.g., 2 seconds)
+                    time.sleep(2)  # Delay for 2 seconds
+                    # Attempt translation
+                    user_input_fr = GoogleTranslator(source=lang, target="fr").translate(user_input)
+                    st.write(f"Translated text: {user_input_fr}")
+                except Exception as e:
+                    # Handle errors from GoogleTranslator
+                    st.write(f"Translation failed: {str(e)}")
              
 
   
