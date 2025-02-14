@@ -1,4 +1,6 @@
 import pandas as pd
+import time
+
 import streamlit as st
 import joblib
 import nltk
