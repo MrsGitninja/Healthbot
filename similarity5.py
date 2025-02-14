@@ -75,10 +75,11 @@ def predict_answer(user_input):
     st.spinner("Translatinfg ... ")
 
     user_input_fr = GoogleTranslator(source=lang, target="fr").translate(user_input)
-    
+    st.spinner("Translatinfg ... ")
     
     #st.write("\n Vous avez dit :  " + user_input_fr)
     user_input_ar = GoogleTranslator(source=lang, target="ar").translate(user_input)
+    st.spinner("Translating ... ")
     
     # Tokenize the user input
     tokens_en = word_tokenize(user_input_en)
@@ -100,7 +101,7 @@ def predict_answer(user_input):
     if not answer :
         answer = "Sorry , i have no idea"
     answer = GoogleTranslator(source = answerlang, target = lang).translate(answer)
-    
+    st.spinner("Translatinfg  Answer... ")
     # Translate the response back to the original language
   
     
