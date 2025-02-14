@@ -6,3 +6,4 @@ langdetect
 scikit-learn
 translate
 deep_translator
+Matplotlib 
