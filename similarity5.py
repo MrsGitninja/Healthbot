@@ -63,7 +63,7 @@ def predict_answer(user_input):
     
     translatuser = Translator (to_lang = lang )
     language = GoogleTranslator(source="en", target=lang).translate(" You are speaking in : ")
-     st.write(f"{translated_text} {lang}")
+     st.write(f"{language} {lang}")
   
     
     # Translate the user input to English, French, and Arabic
