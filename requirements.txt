@@ -1,9 +1,9 @@
 streamlit
 pandas
-joblib 
-nltk 
+joblib
+nltk
 langdetect
 scikit-learn
 translate
-deep_translator
+deep-translator
 Matplotlib 
