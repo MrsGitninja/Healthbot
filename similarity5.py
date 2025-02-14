@@ -72,8 +72,11 @@ def predict_answer(user_input):
     
     # Translate the user input to English, French, and Arabic
     user_input_en = GoogleTranslator(source=lang, target="en").translate(user_input)
+    st.spinner("Translatinfg ... ")
 
     user_input_fr = GoogleTranslator(source=lang, target="fr").translate(user_input)
+    
+    
     #st.write("\n Vous avez dit :  " + user_input_fr)
     user_input_ar = GoogleTranslator(source=lang, target="ar").translate(user_input)
     
