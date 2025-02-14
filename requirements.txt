@@ -7,4 +7,3 @@ scikit-learn
 translate
 deep-translator
 Matplotlib 
-time
