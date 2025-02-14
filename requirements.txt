@@ -3,6 +3,6 @@ pandas
 joblib 
 nltk 
 langdetect
-sicikit-learn
+scikit-learn
 translate
 deep_translator
