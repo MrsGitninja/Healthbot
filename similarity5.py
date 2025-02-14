@@ -60,9 +60,6 @@ def preprocess_and_match_query(user_query, vectorizer, question_vectors, answers
 def predict_answer(user_input):
     # Detect the language of the user input
     lang = detect(user_input)
-    if (not lang):
-        print ("Mchkl fil détection ")
-        break;
     
     translatuser = Translator (to_lang = lang )
     language = GoogleTranslator(source="en", target=lang).translate(" You are speaking in : ")
